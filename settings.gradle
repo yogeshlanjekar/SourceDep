@@ -1,0 +1,8 @@
+include ':JqTest'
+include ':app'
+rootProject.name = "SourceDependacy"
+sourceControl {
+    gitRepository("git@github.com:google/flexbox-layout.git") {
+        include(':flexbox')
+    }
+}
